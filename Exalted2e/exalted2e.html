@@ -4,37 +4,59 @@
     </div>
     <div class="sheet-col">
         <label><span>Name:</span> <input type="text" name="attr_character_name" /></label>
+        <label><span>Exaltation:</span></label>
+        <div class="class-buttons">
+            <input type="checkbox" name="attr_Class" value="Solar" checked="checked" />Solar<br/>
+            <input type="checkbox" name="attr_Class" value="Lunar" />Lunar<br/>
+            <input type="checkbox" name="attr_Class" value="Sidereal" />Sidereal<br/>
+            <input type="checkbox" name="attr_Class" value="DragonBlooded" />Dragon Blooded<br/>
+        </div>
         <label>
             <span>Caste:</span>
-            <select name="attr_Caste">
-                <option value="Dawn">Solar: Dawn</option>
-                <option value="Zenith">Solar: Zenith</option>
-                <option value="Twilight">Solar: Twilight</option>
-                <option value="Night">Solar: Night</option>
-                <option value="Eclipse">Solar: Eclipse</option>
-
-                <option value="FullMoon">Lunar: Full Moon</option>
-                <option value="ChangingMoon">Lunar: Changing Moon</option>
-                <option value="NoMoon">Lunar: No Moon</option>
-
-                <option value="Journey">Sidereal: Journey</option>
-                <option value="Serenity">Sidereal: Serenity</option>
-                <option value="Battle">Sidereal: Battle</option>
-                <option value="Secret">Sidereal: Secret</option>
-                <option value="Ending">Sidereal: Ending</option>
-
-                <option value="Earth">Dragon-Blooded: Earth</option>
-                <option value="Fire">Dragon-Blooded: Fire</option>
-                <option value="Water">Dragon-Blooded: Water</option>
-                <option value="Air">Dragon-Blooded: Air</option>
-            </select>
+            <div class="phantom-class-buttons">
+                <input type="checkbox" name="attr_Class" value="Solar" /><div>
+                    <select name="attr_Caste">
+                        <option value="Dawn">Dawn</option>
+                        <option value="Zenith">Zenith</option>
+                        <option value="Twilight">Twilight</option>
+                        <option value="Night">Night</option>
+                        <option value="Eclipse">Eclipse</option>
+                    </select>
+                </div>
+                <input type="checkbox" name="attr_Class" value="Lunar" /><div>
+                    <select name="attr_Caste">
+                        <option value="FullMoon">Full Moon</option>
+                        <option value="ChangingMoon">Changing Moon</option>
+                        <option value="NoMoon">No Moon</option>
+                    </select>
+                </div>
+                <input type="checkbox" name="attr_Class" value="DragonBlooded" /><div>
+                    <select name="attr_Caste">
+                        <option value="Earth">Earth</option>
+                        <option value="Fire">Fire</option>
+                        <option value="Water">Water</option>
+                        <option value="Air">Air</option>
+                    </select>
+                </div>
+                <input type="checkbox" name="attr_Class" value="Sidereal" /><div>
+                    <select name="attr_Caste">
+                        <option value="Journey">Journey</option>
+                        <option value="Serenity">Serenity</option>
+                        <option value="Battle">Battle</option>
+                        <option value="Secret">Secret</option>
+                        <option value="Ending">Ending</option
+                    </select>
+                </div>
+            </div>
         </label>
-        <label><span>Spirit Form:</span> <input type="text" name="attr_SpiritForm" /></label>
     </div>
     <div class="sheet-col">
         <label><span>Concept:</span> <input type="text" name="attr_Concept" /></label>
         <label><span>Motivation:</span> <input type="text" name="attr_Motivation" /></label>
         <label><span>Anima:</span> <input type="text" name="attr_Anima" /></label>
+        <div class="phantom-class-buttons"><input type="checkbox" name="attr_Class" value="Lunar" /><div>
+            <label><span>Spirit Form:</span> <input type="text" name="attr_SpiritForm" /></label>
+        </div></div>
     </div>
 </div>
 

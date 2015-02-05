@@ -386,6 +386,37 @@ input[type=checkbox] + span::before
     height: 14px;
 }
 
+.sheet-class-buttons input[type=checkbox]{
+    opacity: 100;
+    left: 0px;
+    top: 0px;
+    position: static;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    margin-right: 4px;
+}
+
+div.sheet-class-buttons {
+    margin-bottom: 8px;
+}
+
+.sheet-phantom-class-buttons input[type=checkbox] {
+    display: none;
+}
+
+.sheet-phantom-class-buttons input[type=checkbox]:checked + div {
+    display: block;
+}
+
+.sheet-phantom-class-buttons > div {
+    display: none;
+}
+
+select[name=attr_Caste]{
+    width: 190px;
+}
+
 .sheet-dots input[type=checkbox]:first-child + span::before { opacity: 0.3; }
 
 .sheet-ability input[type=checkbox]:first-child:checked + span::before,

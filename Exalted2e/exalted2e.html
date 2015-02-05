@@ -1142,30 +1142,171 @@
                     <label class="dv">MDV: <input type="number" name="attr_DodgeMDV" value="floor((@{Willpower}+@{Integrity}*(1-@{Integrity|max})+@{Essence})/2)" disabled="true" /></label>
                     <div style="width: 80%; margin-left: 10%">
                         <hr />
-                        <fieldset class="repeating_health">
-                            <div class="health">
-                                <select name="attr_WoundPenalty" class="health-label">
-                                    <option value="-0">-0</option>
-                                    <option value="-1">-1</option>
-                                    <option value="-2">-2</option>
-                                    <option value="-4">-4</option>
+                        <div class="health">
+                            <div style="height: 45px; width: 100%; clear: both;">
+                                - 0
+                                <select name="attr_zero_1" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
                                 </select>
-                                <select name="attr_Damage" class="health-value">
-                                    <option value="none">☐ (no damage)</option>
-                                    <option value="bashing">&nbsp;∕ (bashing damage)</option>
-                                    <option value="lethal">☓ (lethal damage)</option>
-                                    <option value="aggravated">✱ (aggravated damage)</option>
+                                <select name="attr_zero_2" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_zero_3" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_zero_4" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
                                 </select>
                             </div>
-                        </fieldset>
-                        <div class="health">
-                            Incapacitated
-                            <select name="attr_IncapacitatedDamage" class="health-value">
-                                <option value="none">☐ (no damage)</option>
-                                <option value="bashing">&nbsp;∕ (bashing damage)</option>
-                                <option value="lethal">☓ (lethal damage)</option>
-                                <option value="aggravated">✱ (aggravated damage)</option>
-                            </select>
+                            <div style="height: 80px; width: 100%; clear: both;">
+                                - 1
+                                <select name="attr_one_1" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_2" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_3" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_4" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_5" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_6" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_7" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_one_8" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                            </div>
+                            <div style="height: 80px; width: 100%; clear: both;">
+                                - 2
+                                <select name="attr_two_1" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_2" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_3" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_4" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_5" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_6" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_7" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                                <select name="attr_two_8" class="health-value">
+                                    <option value="locked">◼</option>
+                                    <option value="none">☐</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                            </div>
+                            <div style="height: 35px; width: 100%; clear: both;">
+                                - 4
+                                <select name="attr_4_1" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="locked">◼</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                            </div>
+                            <div style="height: 35px; width: 100%; clear: both;">
+                                Incapacitated
+                                <select name="attr_IncapacitatedDamage" class="health-value">
+                                    <option value="none">☐</option>
+                                    <option value="locked">◼</option>
+                                    <option value="bashing">&nbsp;∕</option>
+                                    <option value="lethal">☓</option>
+                                    <option value="aggravated">✱</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>

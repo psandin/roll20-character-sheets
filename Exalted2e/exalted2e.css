@@ -443,6 +443,10 @@ select[name=attr_Caste]{
     content: "✓";
 }
 
+.sheet-ability input[type=checkbox] {
+    display: block;
+}
+
 .sheet-hearthstones input[type=checkbox] + span::before
 {
     margin-left: -15px;

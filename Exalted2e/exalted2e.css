@@ -417,6 +417,14 @@ select[name=attr_Caste]{
     width: 190px;
 }
 
+.sheet-health-value {
+    float: right;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-bottom: 0px solid #000;
+}
+
 .sheet-dots input[type=checkbox]:first-child + span::before { opacity: 0.3; }
 
 .sheet-ability input[type=checkbox]:first-child:checked + span::before,
@@ -467,7 +475,7 @@ select[name=attr_Caste]{
 
 .sheet-dots input[type=checkbox]:checked ~ input[type=radio] + span { opacity: 0.5; }
 
-.sheet-health-label,.sheet-health-value { width: 45px; }
+.sheet-health-label { width: 45px; }
 
 .sheet-familiar-health-row select.sheet-health-value { float: none; }
 
